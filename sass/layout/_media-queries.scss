@@ -1,0 +1,184 @@
+@media screen and (min-width:$min-width) and (max-width:$xs-width - (1)){
+  .our-advantages {
+    text-align: center;
+  }
+}
+@media screen and (max-width:$sm-width - (1)){
+  h3 {
+    padding: 30px 0 25px;
+  }
+  .services {
+    li {
+      &:first-of-type~li{
+        margin-top: 70px;
+      }
+    }
+
+  }
+  .how-to-work {
+    .img-wrapper {
+      margin-bottom: 50px;
+    }
+  }
+  .our-members {
+    li:first-child~li {
+      margin-top: 100px;
+    }
+  }
+}
+@media screen and (min-width:$xs-width) and (max-width:$sm-width - (1)) {
+  h3+p{
+    padding: 0 10%;
+  }
+  .our-advantages {
+    ul.clearfix {
+        &>li {
+          float: left;
+          width: 50%;
+
+          &:nth-child(odd) {
+            clear: left;
+          }
+          ul {
+            li {
+              float: none;
+            }
+          }
+        }
+      }
+    }
+  }
+@media screen and (min-width: 650px) and (max-width:$sm-width - (1)){
+  h3+p{
+    padding: 0 20%;
+  }
+}
+@media screen and (max-width:$md-width - (1)){
+  h3 {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width:$xs-width) and (max-width:$md-width - (1)) {
+  .our-members, .services {
+    li {
+      &:nth-child(2n+1) {
+        clear: both;
+      }
+    }
+
+  }
+}
+@media screen and (min-width:$sm-width) and (max-width:$md-width - (1)) {
+  .services {
+    li {
+      &:nth-of-type(2)~li{
+        margin-top: 50px;
+      }
+    }
+  }
+  .our-members {
+    li{
+      &:nth-child(2)~li{
+        margin-top: 100px;
+      }
+    }
+  }
+}
+@media screen and (min-width:$sm-width) {
+  .title-block {
+    h2 {
+      font-size: $h2-font-size;
+    }
+    h2+span {
+      font-size: 1.5em;
+    }
+  }
+  .mcbook-play {
+    background: url(../img/video-bg-1.svg) left 20% no-repeat, url(../img/video-bg-2.svg) 110% 10% no-repeat;
+    @include prefix(background-size, 30%, moz o webkit);
+    .screen {
+      border-radius: 20px 20px 5px 5px;
+    }
+  }
+  .opinion {
+    .flexslider {
+      margin: 105px auto 90px;
+      .slides {
+        blockquote{
+          padding: 50px 100px;
+        }
+      }
+    }
+  }
+}
+@media screen and (min-width:$md-width) {
+  .h-page {
+    h1 {
+      margin-left: 0;
+    }
+    nav {
+      float: left;
+      padding: 6px 0;
+
+      ul {
+        position: static;
+
+        li{
+          float: left;
+          a{
+            border: 1px solid transparent;
+            padding: 10px 20px;
+            border-radius: 22px;
+            color: inherit;
+            background-color: white;
+            &:hover {
+              border: 1px solid #9fabba;
+              color: #0149a1;
+            }
+          }
+        }
+      }
+    }
+  }
+  .opinion {
+    .flexslider {
+      margin: 105px auto 90px;
+      .slides {
+        blockquote {
+        padding: 50px 100px;
+        }
+      }
+    }
+  }
+  .flex-direction-nav a {
+    height: 76px;
+    width: 76px;
+    margin-top: -40px;
+    border-radius: 50%;
+    border: 2px solid #e3e7eb;
+    &:before {
+      padding: calc(50% - 28px) calc(50% - 13px);
+      font-size: 40px;
+    }
+
+  }
+}
+@media screen and (min-width:$lg-width) {
+  h3 {
+    font-size: (30/18)*1em;
+  }
+  .mcbook-play {
+    .screen {
+      padding: 35px 0 40px;
+    }
+  }
+  .opinion {
+    .flexslider {
+      .slides {
+        blockquote {
+          padding: 50px 300px;
+        }
+      }
+    }
+  }
+}

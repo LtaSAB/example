@@ -1,0 +1,62 @@
+@import
+'../utils/_variables',
+'../utils/_mixins';
+
+/* ie hack
+don't remove that style*/
+.m-page {
+  display: block;
+}
+.container-fluid {
+  min-width: $min-width;
+  max-width: $max-width;
+}
+
+.container-fluid:before, .container-fluid:after,
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table;
+}
+.container-fluid:after,
+.clearfix:after {
+  clear: both;
+}
+* {
+  @include prefix(box-sizing, border-box, webkit moz);
+}
+body {
+  color: $main-color;
+  font-family: $main-font;
+  font-size: $main-font-size;
+  font-weight: $main-font-weight;
+}
+.wrapper {
+  overflow: hidden;
+  min-width: $min-width;
+  max-width: 100%;
+
+  a {
+    text-decoration: $link-text-decoration;
+    color: inherit;
+    transition: $link-transition;
+  }
+}
+ul {
+  list-style-type: $list-style;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.section-top {
+  background-image: linear-gradient(to top, #edeff1 0%, #edeff1 1%, white 24%, #e2e4e8 31%, white 100%);
+}
+.creativity {
+  background: url('../img/creativity.jpg') no-repeat center white;
+  @include prefix(background-size, cover, o webkit moz);
+}
+.how-to-work, .f-page{
+  background-color: #0149a1;
+}
+.meet-our-team {
+  background-color: #edeff1;
+}

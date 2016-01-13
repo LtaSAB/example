@@ -1,0 +1,36 @@
+@import '../utils/_variables';
+
+a.button {
+  background-color: $button-bg-color;
+  color: $secondary-color;
+  border-radius: 30px;
+  display: block;
+  margin: 110px auto 120px;
+  padding: 21px 15px;
+  width: 240px;
+  text-align: center;
+  &:hover {
+    background-color: green;
+  }
+
+  .creativity & {
+    background-color: #0149a1;
+    box-shadow: 0 0 133px 27px white;
+    margin: 355px auto 200px;
+    &:hover {
+      background-color: #555500;
+    }
+  }
+  .how-to-work & {
+    background-color: white;
+    color: $special-color;
+    margin: 100px auto 130px;
+    &:hover {
+      background-color: orangered;
+      color: white;
+    }
+  }
+  .meet-our-team & {
+    margin: 90px auto 125px;
+  }
+}

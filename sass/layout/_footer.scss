@@ -1,0 +1,21 @@
+.our-advantages {
+  ul{
+    padding: 45px 0 50px ;
+
+    li {
+      font-weight: 400;
+      line-height: 36px;
+    }
+  }
+  p {
+    margin-bottom: 125px;
+    padding: 0 15px;
+  }
+}
+.href-author {
+  font-weight: bold;
+
+  &:hover {
+    color: red;
+  }
+}

@@ -1,0 +1,74 @@
+.h-page {
+  padding: 20px 0;
+  border-bottom: 1px solid #e4e6ea;
+  h1 {
+    float: left;
+    margin: 10px 40px 10px 60px;
+  }
+  nav {
+    li{
+      a {
+        display: block;
+        width: 100%;
+        height:100%;
+        padding: 10px 30px;
+        border: 1px solid #7c8ca0;
+        border-radius: 5px;
+        text-align: center;
+        background-color: #0149a1;
+        color: white;
+      }
+    }
+    .nav-btn {
+      display: inline-block;
+      position: absolute;
+      top: 35px;
+      left: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 9px 10px;
+
+      &:hover {
+        background-color: cyan;
+
+        & + ul {
+          display: block !important;
+          position: absolute;
+          top: 70px;
+          left: 0;
+          z-index: 9999;
+
+        }
+      }
+      span {
+        background-color: #888;
+        display: block;
+        width: 22px;
+        height: 2px;
+        border-radius: 1px;
+        & + span {
+          margin-top: 4px;
+        }
+      }
+    }
+  }
+
+  .social-network {
+    float: right;
+    li {
+      float: left;
+      margin: 7px 15px 7px 0;
+      font-size: 20px;
+      font-weight: 400;
+
+      &:last-of-type {
+        margin-right: 0;
+      }
+      a {
+        display: block;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
